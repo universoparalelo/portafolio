@@ -6,35 +6,38 @@
     <title>Mi portafolio</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="encabezado">
         <h1 class="encabezado--titulo">Celeste Martin Rodich</h1>
         <div class="encabezado--container--lista">
             <ul class="encabezado--lista">
-                <li class="encabezado--item"><a href="#">Sobre mi</a></li>
-                <li class="encabezado--item"><a href="#">Skills</a></li>
-                <li class="encabezado--item"><a href="#">Hobbies</a></li>
-                <li class="encabezado--item"><a href="#">Formacion</a></li>
-                <li class="encabezado--item"><a href="#">Proyectos</a></li>
+                <li class="encabezado--item"><a href="#sobre-mi-section">Sobre mi</a></li>
+                <li class="encabezado--item"><a href="#skills-section">Skills</a></li>
+                <li class="encabezado--item"><a href="#hobbies-section">Hobbies</a></li>
+                <li class="encabezado--item"><a href="#formacion-section">Formacion</a></li>
+                <li class="encabezado--item"><a href="#proyectos-section">Proyectos</a></li>
             </ul>
             <p class="encabezado--correo">cmartinrodich@gmail.com</p>
         </div>
     </header>
     <main class="principal">
-        <section class="hero">
+        <section class="hero" id="hero-section">
             <img class="hero--foto" src="img/avatar.jpeg" alt="Una foto de Celeste">
             <div class="hero--container">
                 <h3 class="section--titulo">Hola, soy Celeste y me gusta crear software de calidad</h3>
                 <p class="hero--descripcion">Soy estudiante de Ingenieria en Sistemas y ademas me estoy formando en Oracle ONE en Alura Latam.</p>
                 <ul class="hero--lista">
-                    <li class="hero--item"><a href="#">Github <img src="img/square-arrow-up-right-solid.svg" alt=""></a></li>
-                    <li class="hero--item"><a href="#">Linkedin <img src="img/square-arrow-up-right-solid.svg" alt=""></a></li>
-                    <li class="hero--item"><a href="#">Curriculum <img src="img/square-arrow-up-right-solid.svg" alt=""></a></li>
+                    <li class="hero--item"><a href="https://github.com/universoparalelo" target="_blank">Github <img src="img/square-arrow-up-right-solid.svg" alt=""></a></li>
+                    <li class="hero--item"><a href="https://www.linkedin.com/in/celeste-martin-rodich/" target="_blank">Linkedin <img src="img/square-arrow-up-right-solid.svg" alt=""></a></li>
+                    <li class="hero--item"><a href="img/cv.pdf" target="_blank">Curriculum <img src="img/square-arrow-up-right-solid.svg" alt=""></a></li>
                 </ul>
             </div>
         </section>
-        <section class="sobre-mi">
+        <section class="sobre-mi" id="sobre-mi-section">
             <h3 class="section--titulo">Sobre mi</h3>
             <p class="sobre-mi--descripcion">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla minima dolor obcaecati sint repellat amet sit labore doloremque molestiae! Beatae natus laboriosam repudiandae! Aliquam neque dolor nulla itaque molestiae. 
@@ -43,7 +46,7 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores modi assumenda suscipit nostrum adipisci, ad fugit asperiores. Consectetur ullam mollitia eveniet labore quasi. Sed impedit odit, culpa earum tempora dolore!
             </p>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills-section">
             <h3 class="section--titulo">Skills</h3>
             <article class="skills--articulo">
                 <div class="articulo--tarjeta">
@@ -72,7 +75,7 @@
                 </div>
             </article>
         </section>
-        <section class="hobbies">
+        <section class="hobbies" id="hobbies-section">
             <h3 class="section--titulo">Hobbies</h3>
             <article class="hobbie--articulo">
                 <div class="articulo--tarjeta">
@@ -93,61 +96,73 @@
                 </div>
             </article>
         </section>
-        <section class="formacion">
+        <section class="formacion" id="formacion-section">
             <h3 class="section--titulo">Formacion</h3>
             <article class="formacion--articulo">
-                <div class="articulo--tarjeta">
+                <div class="fa-articulo--tarjeta">
                     <img src="img/utn.png" alt="">
-                    <p>Ingenieria en sistemas - UTN FRRe</p>
-                    <p>2022 - actual</p>
+                    <div class="fa--articulo--texto">
+                        <p class="fa-tarjeta--titulo">Ingenieria en sistemas - UTN FRRe</p>
+                        <p>2022 - actual</p>    
+                    </div>
                 </div>
-                <div class="articulo--tarjeta">
+                <div class="fa-articulo--tarjeta">
                     <img src="img/informatorio.jpg" alt="">
-                    <p>Informatorio - Analisis de datos - Testing</p>
-                    <p>Julio 2024 - actual</p>
+                    <div class="fa--articulo--texto">
+                        <p class="fa-tarjeta--titulo">Analisis de datos - Testing</p>
+                        <p>Julio 2024 - actual</p>
+                    </div>
                 </div>
-                <div class="articulo--tarjeta">
+                <div class="fa-articulo--tarjeta">
                     <img src="img/aluraoracle.png" alt="">
-                    <p>Oracle ONE Latam</p>
-                    <p>Mayo 2024 - actual</p>
+                    <div class="fa--articulo--texto">
+                        <p class="fa-tarjeta--titulo">Oracle ONE Latam</p>
+                        <p>Mayo 2024 - actual</p>
+                    </div>
                 </div>
             </article>
         </section>
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos-section">
             <h3 class="section--titulo">Proyectos</h3>
-            <div class="articulo--tarjeta">
-                <img src="" alt="">
-                <p>Encriptador de texto</p>
-                <p>Oracle ONE Latam</p>
-                <ul>
-                    <li><a href="">Repositorio</a></li>
-                    <li><a href="">Ver demo</a></li>
-                </ul>
+            <div class="p-articulo--tarjeta">
+                <img src="img/encriptador.png" alt="">
+                <article class="p-container">
+                    <p class="p-titulo">Encriptador de texto</p>
+                    <p>Oracle ONE Latam</p>
+                    <ul class="p-lista">
+                        <li><a href="https://github.com/universoparalelo/encriptar.git" target="_blank">Repositorio</a></li>
+                        <li><a href="https://universoparalelo.github.io/encriptar/" target="_blank">Ver demo</a></li>
+                    </ul>
+                </article>
             </div>
-            <div class="articulo--tarjeta">
-                <img src="" alt="">
-                <p>Futbol Argentino</p>
-                <p>Proyecto personal</p>
-                <ul>
-                    <li><a href="">Repositorio</a></li>
-                    <li><a href="">Ver demo</a></li>
-                </ul>
+            <div class="p-articulo--tarjeta">
+                <img src="img/futbol.png" alt="">
+                <article class="p-container">
+                    <p class="p-titulo">Futbol Argentino</p>
+                    <p>Proyecto personal</p>
+                    <ul class="p-lista">
+                        <li><a href="https://github.com/universoparalelo/FutbolArgentino.git" target="_blank">Repositorio</a></li>
+                        <li><a href="https://universoparalelo.github.io/FutbolArgentino/" target="_blank">Ver demo</a></li>
+                    </ul>
+                </article>
             </div>
-            <div class="articulo--tarjeta">
-                <img src="" alt="">
-                <p>Tetris</p>
-                <p>Proyecto personal</p>
-                <ul>
-                    <li><a href="">Repositorio</a></li>
-                    <li><a href="">Ver demo</a></li>
-                </ul>
+            <div class="p-articulo--tarjeta">
+                <img src="img/tetris.png" alt="">
+                <article class="p-container">
+                    <p class="p-titulo">Tetris</p>
+                    <p>Proyecto personal</p>
+                    <ul class="p-lista">
+                        <li><a href="https://github.com/universoparalelo/Tetris.git" target="_blank">Repositorio</a></li>
+                        <li><a href="https://universoparalelo.github.io/Tetris/" target="_blank">Ver demo</a></li>
+                    </ul>
+                </article>
             </div>
         </section>
     </main>
     <footer class="rodapie">
         <h3 class="section--titulo">Contactame</h3>
         <p></p>
-        <form action="">
+        <form class="formulario" action="">
             <label>Nombre
                 <input type="text">
             </label>
@@ -160,11 +175,13 @@
             <label for="">Mensaje
                 <textarea name="" id=""></textarea>
             </label>
-            <button>Enviar</button>
+            <button class="boton-formulario">Enviar</button>
         </form>
 
-        <span>Desarrollado por Celeste</span>
-        <p>2024</p>
+        <div class="fin--rodapie">
+            <span>Desarrollado por Celeste</span>
+            <p>2024</p>
+        </div>
     </footer>
 </body>
 </html>
